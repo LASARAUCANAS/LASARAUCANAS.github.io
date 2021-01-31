@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Emisora las Araucanas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <script src="https://kit.fontawesome.com/yourcode.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    
+  
+<body>
+    <header>
+        <nav id= "header-nav">
+            <div class="container-fluid">
+                <div class="container">
+                  <input type="checkbox" id="check">
+                    <label for="check" class="checkbtn">
+                      <i class="fas fa-bars"></i>
+                    </label>
+                    <a id="colorfuente" href="#">
+                        <img id="alinearlogo" src="/emisora.jpg" alt="" width="140" height="80" class="d-inline-block align-top">
+                        
+                    
+                    </a>
+                  <ul id=navul>
+                    <li><a href="#Noticias"><i class='fas fa-sliders-h' style='font-size:16px'></i>&nbsp Noticias</a></li>
+                    <li><a href="#"><i class='fas fa-sliders-h' style='font-size:16px'></i>&nbsp Secciones</a></li>
+                    <li><a href="#Programacion"><i class='fas fa-sliders-h' style='font-size:16px'></i>&nbsp programación</a></li>
+                    <li><a href="#envivo"><i class='fas fa-play' style='font-size:18px'></i>&nbsp En vivo</a></li>
+                  </ul>
+                  </div>  
+            </div>
+          </nav>
+
+    </header>
+
+  <section id="backgroundfoto">
+    
+  </section>
+
+  <section id="alineartexto">
+    <br>
+    <br>
+    <h1 id=envivo> EN VIVO </h1>
+    <hr>
+    <p>¡Aquí puedes escuchar nuestra programación!.</p>
+    <iframe id= "ajustartamaño" src="//www.zeno.fm/player/las-araucanas-online-stereo" width="626" height="325" frameborder="0" scrolling="no"style="border:1px solid black;"></iframe>
+    <br>
+    <br>
+
+    </section >
+    <section id="alineartexto">
+    <br>
+    <br>
+    <br>
+    <h1 id="Noticias"> NOTICIAS </h1>
+    <hr>
+    <br>
+    <br>
+    <form class="search" action="">
+      <input class="input" type="text" name="search" placeholder="&nbsp ¡Dime un tema!">
+      <input type="submit" name="" id="botonenviar" value="Buscar">
+    </form>
+    <br>
+    <br>
+    <p> Aquí aparecerán las noticias relacionadas al tema de tu interés.</p>
+    </section>
+
+    <div class="container">
+      <ul class="news-list"></ul>
+      <br>
+      <br>
+    </div>
+  
+    <section id="alineartexto">
+      <br>
+      <br>
+      <h1 id="Programacion">PROGRAMACION</h1>
+      <hr>
+      <br>
+    </section>
+
+  <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"></li>
+      <li data-bs-target="#carouselExampleDark" data-bs-slide-to="1"></li>
+      <li data-bs-target="#carouselExampleDark" data-bs-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="10000">
+        <img src="/css/proof1.jpg" class="rounded mx-auto d-block" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>First slide label</h5>
+          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+        </div>
+      </div>
+
+      <div class="carousel-item" data-bs-interval="2000">
+        <img src="/css/proof2.jpg" class="rounded mx-auto d-block" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Second slide label</h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="/css/proof3.jpg" class="rounded mx-auto d-block" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Third slide label</h5>
+          <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+        </div>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleDark" role="button" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleDark" role="button" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </a>
+  </div>
+
+
+ 
+  <script>
+    const searchFrom=document.querySelector('.search');
+    const input=document.querySelector('.input');
+    const newList=document.querySelector('.news-list');
+    
+    
+    searchFrom.addEventListener('submit',retrieve)
+
+    function retrieve(e){
+
+      if(input.value==''){
+        alert('El campo está vacío')
+        return
+      }
+      
+      newList.innerHTML=''
+      e.preventDefault()
+
+      const apikey='cac9f39fc90d416fa1a99d1baef0ff87'
+      let topic= input.value;
+    
+      let url= `http://newsapi.org/v2/top-headlines?country=co&q=${topic}&apiKey=${apikey}`
+
+      
+
+      fetch(url).then((res)=>{
+        return res.json()
+      }).then((data)=>{
+        console.log(data)
+        data.articles.forEach(article => {
+          let li=document.createElement('li');
+          let a= document.createElement('a');
+          a.setAttribute('href', article.url);
+          a.setAttribute('target','_blank');
+          a.textContent=article.title;
+          li.appendChild(a);
+          newList.appendChild(li);
+        })
+      }).catch((error)=>{
+        console.log(error)
+      })
+      
+    }
+  </script>
+    
+
+
+  <!-- jQuery (Bootstrap JS plugins depend on it) -->
+  <script src="js/jquery-2.1.4.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

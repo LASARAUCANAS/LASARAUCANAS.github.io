@@ -1,0 +1,179 @@
+body {
+    font-size: 16px;
+    color: #fff;
+    background-color: #ffc433;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+/**HEADER*/
+  #header-nav{
+    background-color:#336EFF ;
+    border-radius: 0;
+    border: 0;
+  }
+/**logo*/
+  #colorfuente{
+    font-size: 10px;
+    color:white; 
+    padding: 5px 5px;
+    text-decoration-line: underline;
+    
+  }
+
+ #alinearlogo{
+     margin-left: -40px;
+ }
+ nav{
+   height: 10;
+   width: 100%;
+ }
+ 
+ nav ul {
+   float:right;
+ }
+
+ nav ul li{
+   display: inline-block;
+   line-height: 80px;
+   margin:0 20px;
+ }
+ nav ul li a{
+   color:white;
+   font-size: 15px;
+   font-family: 'Montserrat', sans-serif;
+   text-transform: uppercase;
+   text-decoration: none;
+   padding:8px 14px;
+   border-radius: 4px;
+ }
+
+ a.active, a:hover{
+   background:#ffc433; 
+   transition:.5s;
+ }
+
+ .checkbtn{
+   font-size: 30px;
+   color:white;
+   float:right;
+   line-height: 80px;
+   margin-right: 0px;
+   cursor:pointer;
+   display: none;
+ }
+ #check{
+   display:none;
+ }
+
+ .carousel-inner > .carousel-item > img {
+  width:640px;
+  height:426px;
+}
+.news-list{
+  font-size: 18px;
+  color: black;
+  font-weight: bold;
+  background:url(/css/bcnews.jpg);
+  border: 1px solid black;
+  text-decoration: none;
+  padding: 0px 0px 0px 60px;
+  opacity: 100%;
+}
+
+ @media (max-width: 1023px){
+  .checkbtn{
+    margin-right: 0;
+    display: block;
+  }
+ 
+   #navul{
+     position:absolute;
+     width:100%;
+     height: 40vh;
+     background:#112250;
+     top:80px;
+     left:-100%;
+     text-align: center;
+     transition:all .8s;
+     overflow: auto;
+   }
+   nav #navul li{
+     display:block;
+     margin: 30px 0px;
+     line-height:30px;
+     
+   }
+   nav #navul li a{
+     font-size: 15px;
+   }
+
+   #ajustartamaño{
+     width:80vw;
+     height:40vh;
+   }
+
+   a:hover, a.active{
+     background: none;
+     color:#ffc433;
+   }
+
+   #check:checked~ul{
+     left:0;
+   }
+   
+   .news-list{
+    font-size: 13px;
+    font-weight: bold;
+    color: black;
+    background:url(/css/bcnews.jpg);
+    border: 1px solid black;
+    padding: 0px 0px 0px 30px;
+    text-decoration: none;
+    opacity: 120%;
+  }
+    .news-list li{
+
+      padding: 10px 10px 10px 50px;
+    }
+   }
+ 
+
+ #backgroundfoto{
+   background: url("background.jpg");
+   background-size: cover; 
+   height: 40vh; 
+   width: 100vw;
+  
+  
+   background-repeat: no-repeat;
+   
+   
+ }
+
+ #alineartexto{
+   text-align: center;
+   color: black;
+   
+ }
+
+ input[type=text] {
+  width: 250px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  background-image: url('searchicon.png');
+  background-position: 8px 8px; 
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+  transition: width 0.4s ease-in-out;
+}
+
+input[type=text]:focus {
+  width: 30%;
+}
+
+.news-list li{
+  padding: 30px 10px 10px 50px;
+}
